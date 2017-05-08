@@ -17,7 +17,7 @@ class Connect {
             'driver' => 'pdo_mysql',
             'user' => 'lisaruth1',
             'password' => '7898187730123',
-            'dbname' => 'hosto210_newsletter',
+            'dbname' => 'lisaruth1',
             'host' => 'mysql1.lisaruth.com.br',
             'charset' => 'utf8'
         );
