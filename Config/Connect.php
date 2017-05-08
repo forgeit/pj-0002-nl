@@ -15,10 +15,10 @@ class Connect {
                 
         $dbParams = array(
             'driver' => 'pdo_mysql',
-            'user' => 'root',
-            'password' => '78981',
+            'user' => 'lisaruth1',
+            'password' => '7898187730123',
             'dbname' => 'hosto210_newsletter',
-            'host' => 'localhost',
+            'host' => 'mysql1.lisaruth.com.br',
             'charset' => 'utf8'
         );
         
