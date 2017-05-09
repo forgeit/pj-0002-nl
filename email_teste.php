@@ -1,5 +1,7 @@
 <?php 
 
+require_once __DIR__ . Config::AUTOLOAD;
+
 $mail = new PHPMailer();
 $mail->From = utf8_encode('site@lisaruth.com.br');
 $mail->FromName = utf8_encode('Lisaruth');
