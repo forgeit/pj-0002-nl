@@ -163,7 +163,6 @@ class EnvioController extends Controller {
             )
         );
 
-        
         $mail->Timeout = 10;
         $mail->SMTPAuth = true;
         $mail->Port = 587;
