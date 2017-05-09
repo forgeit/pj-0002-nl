@@ -19,7 +19,7 @@ $mail->isSMTP();
 $mail->SMTPAuth = true;
 $mail->Host = 'smtp.lisaruth.com.br';
 $mail->Port = '587';
-$mail->Username = 'newsletter@lisaruth.com.br';            //Username of your email account
+$mail->Username = 'newsletter=lisaruth.com.br';            //Username of your email account
 $mail->Password = '78981_Lumina';
 $mail->AddAddress('kelvinpalves@gmail.com');
 $mail->isHTML(true);
