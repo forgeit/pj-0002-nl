@@ -171,7 +171,7 @@ class EnvioController extends Controller {
         $mail->XMailer = ' ';
         $mail->Host = $cliente->getHostSmtp();
         $mail->Username = 'newsletter=lisaruth.com.br';
-        $mail->Password = base64_decode($cliente->getPasswordSmtp());
+        $mail->Password = '78981_Lumina';
         $mail->From = $cliente->getFromSmtp();
         $mail->FromName = $cliente->getFromNameSmtp();
         
