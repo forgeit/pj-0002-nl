@@ -159,17 +159,19 @@ class EnvioController extends Controller {
         $mail->SMTPAuth = true;
         $mail->Port = 587;
         $mail->CharSet = 'UTF-8';
-        $mail->Host = $cliente->getHostSmtp();
-        $mail->Username = $cliente->getUserNameSmtp();
-        $mail->Password = base64_decode($cliente->getPasswordSmtp());
-        $mail->From = $cliente->getFromSmtp();
-        $mail->FromName = $cliente->getFromNameSmtp();
+        $mail->Host = 'smtp.lisaruth.com.br';
+        $mail->Username = 'newsletter@lisaruth.com.br';
+        $mail->Password = '7898187730123';
+        $mail->From = 'newsletter@lisaruth.com.br';
+        $mail->FromName = 'Lisaruth Delícias Caseiras';
 
+        $this->log->info('querido');
         $this->log->info($cliente->getHostSmtp());
         $this->log->info($cliente->getUserNameSmtp());
         $this->log->info($cliente->getPasswordSmtp());
         $this->log->info($cliente->getFromSmtp());
         $this->log->info($cliente->getFromNameSmtp());
+        $this->log->info('cheguei');
         
         $mail->AddAddress($array['email'], $array['email']);
 
