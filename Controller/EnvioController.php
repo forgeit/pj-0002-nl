@@ -162,8 +162,8 @@ class EnvioController extends Controller {
         $mail->Port = '587';
 
 
-        $mail->Username = 'site=lisaruth.com.br';            //Username of your email account
-        $mail->Password = 'elisa#2016@lisaruth.email=';
+        $mail->Username = 'newsletter=lisaruth.com.br';            //Username of your email account
+        $mail->Password = '78981_Lumina';
 
         $this->log->info('querido');
         $this->log->info($cliente->getHostSmtp());
