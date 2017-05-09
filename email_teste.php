@@ -1,5 +1,6 @@
 <?php 
 
+require_once __DIR__ . '/Config/Config.php';
 require_once __DIR__ . Config::AUTOLOAD;
 
 $mail = new PHPMailer();
