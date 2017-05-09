@@ -232,6 +232,7 @@ class EnvioController extends Controller {
         $fila = $service->findById('FilaEnvio', $array['id']);
 
         if (!$mail->send()) {
+            $this->log->error($mail->ErrorInfo);
             $situacao = $service->findById('Situacao', 3);
         } else {
             $situacao = $service->findById('Situacao', 2);
