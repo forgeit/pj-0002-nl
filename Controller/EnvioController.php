@@ -153,27 +153,29 @@ class EnvioController extends Controller {
 
         $mail = new PHPMailer();
 
-        $mail->From = utf8_encode('site@lisaruth.com.br');
-        $mail->FromName = utf8_encode('Lisaruth');
-        $mail->isSMTP();
-        $mail->SMTPAuth = true;
-        $mail->SMTPSecure = "tsl";
-        $mail->Host = 'smtp.lisaruth.com.br';
-        $mail->Port = '587';
+        $mail->IsSMTP();
 
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
 
-        $mail->Username = 'newsletter=lisaruth.com.br';            //Username of your email account
-        $mail->Password = '78981_Lumina';
-
-        $this->log->info('querido');
-        $this->log->info($cliente->getHostSmtp());
-        $this->log->info($cliente->getUserNameSmtp());
-        $this->log->info($cliente->getPasswordSmtp());
-        $this->log->info($cliente->getFromSmtp());
-        $this->log->info($cliente->getFromNameSmtp());
-        $this->log->info('cheguei');
         
-        $mail->AddAddress($array['email'], $array['email']);
+        $mail->Timeout = 10;
+        $mail->SMTPAuth = true;
+        $mail->Port = 587;
+        $mail->CharSet = 'UTF-8';
+        $mail->XMailer = ' ';
+        $mail->Host = $cliente->getHostSmtp();
+        $mail->Username = $cliente->getUserNameSmtp();
+        $mail->Password = base64_decode($cliente->getPasswordSmtp());
+        $mail->From = $cliente->getFromSmtp();
+        $mail->FromName = $cliente->getFromNameSmtp();
+        
+        $mail->AddAddress($array['email']);
 
         $mail->isHTML(true);
 
