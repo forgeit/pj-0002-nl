@@ -165,7 +165,11 @@ class EnvioController extends Controller {
         $mail->From = $cliente->getFromSmtp();
         $mail->FromName = $cliente->getFromNameSmtp();
 
-        $this->log->info($mail);
+        $this->log->info($cliente->getHostSmtp());
+        $this->log->info($cliente->getUserNameSmtp());
+        $this->log->info($cliente->getPasswordSmtp());
+        $this->log->info($cliente->getFromSmtp());
+        $this->log->info($cliente->getFromNameSmtp());
         
         $mail->AddAddress($array['email'], $array['email']);
 
