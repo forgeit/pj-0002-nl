@@ -158,14 +158,14 @@ class EnvioController extends Controller {
         $mail->Timeout = 10;
         $mail->SMTPAuth = true;
         $mail->Port = 587;
-        $mail->SMTPSecure = false;
         $mail->CharSet = 'UTF-8';
-        $mail->XMailer = ' ';
         $mail->Host = $cliente->getHostSmtp();
         $mail->Username = $cliente->getUserNameSmtp();
         $mail->Password = base64_decode($cliente->getPasswordSmtp());
         $mail->From = $cliente->getFromSmtp();
         $mail->FromName = $cliente->getFromNameSmtp();
+
+        $this->log->info($mail);
         
         $mail->AddAddress($array['email'], $array['email']);
 
