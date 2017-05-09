@@ -153,11 +153,14 @@ class EnvioController extends Controller {
 
         $mail = new PHPMailer();
 
-        $mail->IsSMTP();
+        $mail->isSMTP();
+        $mail->SMTPDebug = 2;
+        $mail->Debugoutput = 'html';
         
         $mail->Timeout = 10;
         $mail->SMTPAuth = true;
-        $mail->Port = 587;
+        $mail->Port = '587';
+        $mail->SMTPSecure = "tsl";
         $mail->CharSet = 'UTF-8';
         $mail->Host = 'smtp.lisaruth.com.br';
         $mail->Username = 'newsletter@lisaruth.com.br';
