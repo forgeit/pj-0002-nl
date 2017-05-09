@@ -154,36 +154,36 @@ class EnvioController extends Controller {
 
         $mail->IsSMTP();
         
-        $headers = '';
-        $headers .= $this->HeaderLine("Organization" , "http://www.forgeit.com.br"); 
-        $headers .= $this->HeaderLine("Content-Transfer-encoding" , "8bit");
-        $headers .= $this->HeaderLine("Message-ID" , "<".md5(uniqid(time()))."@{$_SERVER['SERVER_NAME']}>");
-        $headers .= $this->HeaderLine("X-MSmail-Priority" , "Normal");
-        $headers .= $this->HeaderLine("X-Mailer" , "Microsoft Office Outlook, Build 11.0.5510");
-        $headers .= $this->HeaderLine("X-MimeOLE" , "Produced By Microsoft MimeOLE V6.00.2800.1441");
-        $headers .= $this->HeaderLine("X-Sender" , $cliente->getFromSmtp());
-        $headers .= $this->HeaderLine("X-AntiAbuse" , "This is a solicited email for - http://www.forgeit.com.br mailing list.");
-        $headers .= $this->HeaderLine("X-AntiAbuse" , "Servername - {$_SERVER['SERVER_NAME']}");
-        $headers .= $this->HeaderLine("X-AntiAbuse" , $cliente->getFromSmtp());
+        // $headers = '';
+        // $headers .= $this->HeaderLine("Organization" , "http://www.forgeit.com.br"); 
+        // $headers .= $this->HeaderLine("Content-Transfer-encoding" , "8bit");
+        // $headers .= $this->HeaderLine("Message-ID" , "<".md5(uniqid(time()))."@{$_SERVER['SERVER_NAME']}>");
+        // $headers .= $this->HeaderLine("X-MSmail-Priority" , "Normal");
+        // $headers .= $this->HeaderLine("X-Mailer" , "Microsoft Office Outlook, Build 11.0.5510");
+        // $headers .= $this->HeaderLine("X-MimeOLE" , "Produced By Microsoft MimeOLE V6.00.2800.1441");
+        // $headers .= $this->HeaderLine("X-Sender" , $cliente->getFromSmtp());
+        // $headers .= $this->HeaderLine("X-AntiAbuse" , "This is a solicited email for - http://www.forgeit.com.br mailing list.");
+        // $headers .= $this->HeaderLine("X-AntiAbuse" , "Servername - {$_SERVER['SERVER_NAME']}");
+        // $headers .= $this->HeaderLine("X-AntiAbuse" , $cliente->getFromSmtp());
         
-        $mail->CreateHeader($headers);
+        // $mail->CreateHeader($headers);
         
-        $mail->DKIM_domain = 'freewayintercambio.com.br';
-        $mail->DKIM_identity = $cliente->getUserNameSmtp();
-        $mail->DKIM_selector = 'key1';
-        $mail->DKIM_private = 'MIICXgIBAAKBgQDDT8EOmaOdZnKqwAEOQWd5mhwYZ2/Tu+8PS/quxrANADK/+5hw
-                                yXTwcEIeHfbskcTDyuW1klvEz35rUmf63evwRoaVotiFTOtWSX6IiE6AaTa+tMyV
-                                G35grObaMKz/tbBXSijJlratwzwFbMiLcPoYk7KvsUKLScAamBHLPirftwIDAQAB
-                                AoGAZyHAAaOjP8QPHJbSd+KVbyKvXzuPUzDTpTIrpwqHf/Xw1mtWLYhTVXsRjrGn
-                                53d5fSGwdlZYWu5uBOG4wkFZCdUljLYLNnjfzhvD/wWW7PTPZXuzMrmIJu/RfiP2
-                                9Q3e6QUHfGGyRMXb1V341wiD7ulbQ+kClEaafP+MhlUlh8ECQQDjUtRcy6dDEIuP
-                                SDxgMmxSuSjaK4QvUAHIdFMncU+9uLy4hlsBB5W3dYTjsob/DqyBBBULV+Z6Q7xF
-                                CbDKlIJnAkEA2/MhhNdhED59LK5iOCIYlmgV/IjX5ZN2V8WtJv4pZp7EbLtSXJWz
-                                uCYdKHjqUlMrd8plDuJktZLrTomXUySGMQJBAJztf0CYLl1zvIQrP9LAvFrXC8ag
-                                p93pg3GYLBdcd8nnEBDqX0R0sfw2Goj9o4fL33YpFUYBZlAdFokqSWtv3h0CQQDP
-                                rSmg/Jwxck9OuPkUd10v5ueborn3ktzS01tCzgjZVF+zKswBj3g6EALIDCNzyAPq
-                                /7eb7jeZGjgD1/aCEqKBAkEAi7dOs5QJCbmlMzwE0g/cx2aWs10MsUQKQ+tjvjl0
-                                HQAqMxOcG7h3468AfSDTJwJHn+Fh4wZppL3GBQdTFBH73w==';
+        // $mail->DKIM_domain = 'freewayintercambio.com.br';
+        // $mail->DKIM_identity = $cliente->getUserNameSmtp();
+        // $mail->DKIM_selector = 'key1';
+        // $mail->DKIM_private = 'MIICXgIBAAKBgQDDT8EOmaOdZnKqwAEOQWd5mhwYZ2/Tu+8PS/quxrANADK/+5hw
+        //                         yXTwcEIeHfbskcTDyuW1klvEz35rUmf63evwRoaVotiFTOtWSX6IiE6AaTa+tMyV
+        //                         G35grObaMKz/tbBXSijJlratwzwFbMiLcPoYk7KvsUKLScAamBHLPirftwIDAQAB
+        //                         AoGAZyHAAaOjP8QPHJbSd+KVbyKvXzuPUzDTpTIrpwqHf/Xw1mtWLYhTVXsRjrGn
+        //                         53d5fSGwdlZYWu5uBOG4wkFZCdUljLYLNnjfzhvD/wWW7PTPZXuzMrmIJu/RfiP2
+        //                         9Q3e6QUHfGGyRMXb1V341wiD7ulbQ+kClEaafP+MhlUlh8ECQQDjUtRcy6dDEIuP
+        //                         SDxgMmxSuSjaK4QvUAHIdFMncU+9uLy4hlsBB5W3dYTjsob/DqyBBBULV+Z6Q7xF
+        //                         CbDKlIJnAkEA2/MhhNdhED59LK5iOCIYlmgV/IjX5ZN2V8WtJv4pZp7EbLtSXJWz
+        //                         uCYdKHjqUlMrd8plDuJktZLrTomXUySGMQJBAJztf0CYLl1zvIQrP9LAvFrXC8ag
+        //                         p93pg3GYLBdcd8nnEBDqX0R0sfw2Goj9o4fL33YpFUYBZlAdFokqSWtv3h0CQQDP
+        //                         rSmg/Jwxck9OuPkUd10v5ueborn3ktzS01tCzgjZVF+zKswBj3g6EALIDCNzyAPq
+        //                         /7eb7jeZGjgD1/aCEqKBAkEAi7dOs5QJCbmlMzwE0g/cx2aWs10MsUQKQ+tjvjl0
+        //                         HQAqMxOcG7h3468AfSDTJwJHn+Fh4wZppL3GBQdTFBH73w==';
         
         $mail->Timeout = 10;
         $mail->SMTPAuth = true;
