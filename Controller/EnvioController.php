@@ -163,7 +163,7 @@ class EnvioController extends Controller {
         $mail->SMTPSecure = "tsl";
         $mail->CharSet = 'UTF-8';
         $mail->Host = 'smtp.lisaruth.com.br';
-        $mail->Username = 'newsletter@lisaruth.com.br';
+        $mail->Username = 'newsletter=lisaruth.com.br';
         $mail->Password = '7898187730123';
         $mail->From = 'newsletter@lisaruth.com.br';
         $mail->FromName = 'Lisaruth Delícias Caseiras';
