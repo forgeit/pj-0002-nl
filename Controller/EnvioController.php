@@ -96,7 +96,7 @@ class EnvioController extends Controller {
             }
 
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, 'http://newsletter.freewayintercambio.com.br/script.php');
+            curl_setopt($ch, CURLOPT_URL, 'http://www.lisaruth.com.br/newsletter/main/script.php');
             curl_setopt($ch, CURLOPT_FRESH_CONNECT, true);
             curl_setopt($ch, CURLOPT_TIMEOUT, 1);
             curl_exec($ch);
