@@ -158,7 +158,7 @@ class EnvioController extends Controller {
         $mail->Timeout = 10;
         $mail->SMTPAuth = true;
         $mail->Port = 587;
-        $mail->SMTPSecure = "tsl";
+        $mail->SMTPSecure = false;
         $mail->CharSet = 'UTF-8';
         $mail->XMailer = ' ';
         $mail->Host = $cliente->getHostSmtp();
