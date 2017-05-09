@@ -16,7 +16,7 @@ $mail->Subject = 'Teste';
 $mail->Body = 'Teste';
 
 if (!$mail->send()) {
-    print_r($mail->ErrorInfo)
+    print_r($mail->ErrorInfo);
 } else {
     print_r("sucesso");
 }
