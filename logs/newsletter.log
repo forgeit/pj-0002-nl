@@ -117,3 +117,1336 @@
 2017-05-07T01:45:47-03:00 [Routes][INFO ] - ./Controller/AssinaturaController.php
 2017-05-07T01:45:47-03:00 [Service][INFO ] - Assinatura --- 1
 2017-05-07T01:45:47-03:00 [Service][INFO ] - kelvin2
+2017-05-08T21:32:30-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:32:36-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:33:06-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\DriverException' with message 'An exception occured in driver: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:115
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:33:06-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:39:14-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:39:49-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:39:55-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:40:25-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\DriverException' with message 'An exception occured in driver: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:115
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:40:25-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:41:08-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:41:38-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\DriverException' with message 'An exception occured in driver: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:115
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:41:38-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:41:38-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:41:44-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:41:44-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:41:58-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:41:58-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:42:06-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:42:06-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:42:32-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:42:32-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:42:38-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:42:38-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:42:43-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:42:48-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:42:48-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:05-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:05-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:05-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:05-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:05-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:05-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:06-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:06-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:06-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:06-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:14-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:18-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:24-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:24-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:30-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:30-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:51-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:44:51-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+2017-05-08T21:44:59-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:44:59-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:44:59-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+2017-05-08T21:45:05-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:45:05-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+2017-05-08T21:45:15-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/index.php(49): ClienteService->login(Object(Cliente))
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/index.php(49): ClienteService->login(Object(Cliente))
+#5 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/index.php(49): ClienteService->login(Object(Cliente))
+#6 {main}
+2017-05-08T21:45:15-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:45:15-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+2017-05-08T21:45:15-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(71): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(71): FilaEnvioService->verificarFilaEnvio()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(71): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+2017-05-08T21:45:15-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(77): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(77): HistoricoService->buscarTotalEnviado()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(77): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+2017-05-08T21:45:21-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:45:21-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:21-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:21-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:26-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:45:26-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:26-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:26-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:31-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:45:31-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:31-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:31-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:36-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:45:36-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:36-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:36-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:41-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:45:41-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(37): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:41-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(41): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:41-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(46): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboardAJAX(NULL)
+#7 {main}
+2017-05-08T21:45:44-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:45:44-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(17): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(69): HistoricoService->buscarPorMesAno('05', '2017')
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+2017-05-08T21:45:44-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(71): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(71): FilaEnvioService->verificarFilaEnvio()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/FilaEnvioService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(71): FilaEnvioService->verificarFilaEnvio()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+2017-05-08T21:45:44-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(77): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=loca...', 'hosto210_newsle...', '78981', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#4 /var/www/newsletter/main/Controller/SistemaController.php(77): HistoricoService->buscarTotalEnviado()
+#5 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\ConnectionException' with message 'An exception occured in driver: SQLSTATE[28000] [1045] Access denied for user 'hosto210_newsletter'@'localhost' (using password: YES)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:103
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'hosto210_newsle...', '78981', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/HistoricoService.php(29): Doctrine\DBAL\Connection->prepare('select count(*)...')
+#5 /var/www/newsletter/main/Controller/SistemaController.php(77): HistoricoService->buscarTotalEnviado()
+#6 /var/www/newsletter/main/index.php(71): SistemaController->dashboard(NULL)
+#7 {main}
+2017-05-08T21:45:47-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:45:59-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-08T21:46:01-03:00 [Routes][INFO ] - ./Controller/SistemaController.php
+2017-05-08T21:46:03-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:03-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:34-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:34-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:42-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:42-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:50-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:50-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:51-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:51-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:46:51-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:47:14-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:47:15-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:47:30-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:47:31-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:47:51-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:47:52-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:47:58-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:47:58-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:48:11-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:48:55-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:49:10-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:49:17-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:49:25-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
+2017-05-08T21:49:25-03:00 [Routes][INFO ] - ./Controller/ContatoController.php
