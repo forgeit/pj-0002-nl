@@ -1,5 +1,5 @@
 <header class="main-header">
-    <a href="/" class="logo">
+    <a href="/newsletter/main/index.php" class="logo">
         <span class="logo-mini"><b>N</b>L</span>
         <span class="logo-lg"><b>NEWS</b>Letter</span>
     </a>
