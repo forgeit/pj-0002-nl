@@ -153,20 +153,17 @@ class EnvioController extends Controller {
 
         $mail = new PHPMailer();
 
+        $mail->From = utf8_encode('site@lisaruth.com.br');
+        $mail->FromName = utf8_encode('Lisaruth');
         $mail->isSMTP();
-        $mail->SMTPDebug = 2;
-        $mail->Debugoutput = 'html';
-        
-        $mail->Timeout = 10;
         $mail->SMTPAuth = true;
-        $mail->Port = '587';
         $mail->SMTPSecure = "tsl";
-        $mail->CharSet = 'UTF-8';
         $mail->Host = 'smtp.lisaruth.com.br';
-        $mail->Username = 'newsletter=lisaruth.com.br';
-        $mail->Password = '7898187730123';
-        $mail->From = 'newsletter@lisaruth.com.br';
-        $mail->FromName = 'Lisaruth Delícias Caseiras';
+        $mail->Port = '587';
+
+
+        $mail->Username = 'site=lisaruth.com.br';            //Username of your email account
+        $mail->Password = 'elisa#2016@lisaruth.email=';
 
         $this->log->info('querido');
         $this->log->info($cliente->getHostSmtp());
