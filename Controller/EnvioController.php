@@ -238,6 +238,8 @@ class EnvioController extends Controller {
             $situacao = $service->findById('Situacao', 2);
         }
 
+        $this->log->info("Teste testezito no mas.");
+
         $fila->setSituacao($situacao);
         $fila->setTsEnvio(new \DateTime(date('Y-m-d H:i:s')));
 
