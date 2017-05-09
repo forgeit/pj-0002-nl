@@ -4,6 +4,13 @@ require_once __DIR__ . '/Config/Config.php';
 require_once __DIR__ . Config::AUTOLOAD;
 
 $mail = new PHPMailer();
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);
 $mail->From = utf8_encode('site@lisaruth.com.br');
 $mail->FromName = utf8_encode('Lisaruth');
 $mail->isSMTP();
