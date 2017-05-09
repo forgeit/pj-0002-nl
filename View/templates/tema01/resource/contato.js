@@ -6,7 +6,7 @@
 
 $('#tabela').DataTable({
     "ajax": {
-        "dataSource": "/newsletter/main/index.php?c=contato&m=carregarTabelaPrincipal",
+        "url": "/newsletter/main/index.php?c=contato&m=carregarTabelaPrincipal",
         "dataSrc": "listaPrincipal"
     },
     "order": [1, "asc"],
