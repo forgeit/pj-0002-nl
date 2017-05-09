@@ -55,6 +55,6 @@
         <script type="text/javascript" src="plugins/datatables/jquery.dataTables.min.js" ></script>
         <script type="text/javascript" src="plugins/datatables/dataTables.bootstrap.min.js" ></script>
         <script type="text/javascript" src="plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" ></script>
-        <script type="text/javascript" src="resource/contato.js"></script>
+        <script type="text/javascript" src="resource/contato.js?1"></script>
     </body>
 </html>
