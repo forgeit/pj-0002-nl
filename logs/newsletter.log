@@ -1925,3 +1925,6 @@ Stack trace:
 2017-05-16T20:22:53-03:00 [Routes][INFO ] - ./Controller/AssinaturaController.php
 2017-05-16T20:22:53-03:00 [Service][INFO ] - Assinatura --- 1
 2017-05-16T20:22:53-03:00 [Service][INFO ] - kelvin2
+2017-05-16T20:28:19-03:00 [Routes][INFO ] - ./Controller/RelatorioController.php
+2017-05-16T20:28:21-03:00 [Routes][INFO ] - ./Controller/R001Controller.php
+2017-05-16T20:28:22-03:00 [Routes][INFO ] - ./Controller/R001Controller.php

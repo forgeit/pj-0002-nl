@@ -25,13 +25,13 @@
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="dataInicial">Data Inicial:</label>
-                                                <input type="date" class="form-control data" id="dataInicial" placeholder="Informe a data inicial" required="true" >
+                                                <input type="text" class="form-control data" id="dataInicial" placeholder="Informe a data inicial" required="true" >
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label for="dataFinal">Data Final:</label>
-                                                <input type="date" class="form-control data" id="dataFinal" placeholder="Informe a data final" required="true" >
+                                                <input type="text" class="form-control data" id="dataFinal" placeholder="Informe a data final" required="true" >
                                             </div>
                                         </div>
                                     </div>
