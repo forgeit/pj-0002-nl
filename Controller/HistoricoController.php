@@ -27,17 +27,20 @@ class HistoricoController extends Controller {
     
     public function carregarTabelaPrincipal() {
         require_once './Service/Service.php';
+        require_once './Service/FilaEnvioService.php';
         require_once './Model/Template.php';
         require_once './Model/Situacao.php';
         require_once './Model/FilaEnvio.php';
-        $service = new Service();
+        $service = new FilaEnvioService();
         
-        $array = $service->findAll('FilaEnvio');
+        $array = $service->buscarHistorico();
         
-        foreach ($array as $value) {
-            $value->getTemplate()->setTexto(null);
-        }
+        // foreach ($array as $value) {
+            // $value->getTemplate()->setTexto(null);
+        // }
         
+        // print_r(json_encode(array('listaPrincipal' => $array)));
+
         print_r(json_encode(array('listaPrincipal' => $array)));
     }
 }

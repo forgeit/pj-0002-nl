@@ -21,6 +21,15 @@ class Connect {
             'host' => 'mysql1.lisaruth.com.br',
             'charset' => 'utf8'
         );
+
+        // $dbParams = array(
+        //     'driver' => 'pdo_mysql',
+        //     'user' => 'root',
+        //     'password' => '78981',
+        //     'dbname' => 'hosto210_newsletter',
+        //     'host' => 'localhost',
+        //     'charset' => 'utf8'
+        // );
         
         $config = Setup::createConfiguration($isDevMode);
         $driver = new AnnotationDriver(new AnnotationReader(), $paths);

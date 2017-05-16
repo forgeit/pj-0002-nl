@@ -12,10 +12,10 @@ $('#tabela').DataTable({
     "order": [1, "asc"],
     "columns": [
         {"data": "id"},
-        {"data": "template.titulo"},
+        {"data": "template"},
         {"data": "email"},
-        {"data": "situacao.dsSituacao"},
-        {"data": "tsEnvio.date", 
+        {"data": "situacao"},
+        {"data": "dataEnvio", 
             "mRender": function (data) {
                 return data == null ? "Não Possui" : data;
             }
