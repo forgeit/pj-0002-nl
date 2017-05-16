@@ -173,6 +173,8 @@ class EnvioController extends Controller {
         $mail->Password = base64_decode($cliente->getPasswordSmtp());
         $mail->From = $cliente->getFromSmtp();
         $mail->FromName = $cliente->getFromNameSmtp();
+
+        $this->log->info($cliente);
         
         $mail->AddAddress($array['email']);
 
