@@ -1,19 +1,19 @@
-<?php /* Smarty version 3.1.27, created on 2017-05-16 19:44:06
-         compiled from "/var/www/newsletter/main/View/templates/tema01/contato.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2017-05-16 19:47:11
+         compiled from "/var/www/newsletter/main/View/templates/tema01/historico.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:312884046591b80b66f89a6_77997604%%*/
+/*%%SmartyHeaderCode:1280576209591b816f7a69e6_76491211%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '80fb9fe4a2cd145e34e446011b2ab53357eb1c8d' => 
+    'e5e0b01f7b124a3306750a484c47774842aee1b1' => 
     array (
-      0 => '/var/www/newsletter/main/View/templates/tema01/contato.tpl',
-      1 => 1494974313,
+      0 => '/var/www/newsletter/main/View/templates/tema01/historico.tpl',
+      1 => 1492556498,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '312884046591b80b66f89a6_77997604',
+  'nocache_hash' => '1280576209591b816f7a69e6_76491211',
   'variables' => 
   array (
     'titulo' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_591b80b671b943_01189657',
+  'unifunc' => 'content_591b816f8290e6_23269966',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_591b80b671b943_01189657')) {
-function content_591b80b671b943_01189657 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_591b816f8290e6_23269966')) {
+function content_591b816f8290e6_23269966 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '312884046591b80b66f89a6_77997604';
+$_smarty_tpl->properties['nocache_hash'] = '1280576209591b816f7a69e6_76491211';
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,7 +56,7 @@ $_smarty_tpl->properties['nocache_hash'] = '312884046591b80b66f89a6_77997604';
                     </h1>
                     <ol class="breadcrumb">
                         <li class="active">
-                            Contato
+                            Histórico
                         </li>
                     </ol>
                 </section>
@@ -66,19 +66,17 @@ $_smarty_tpl->properties['nocache_hash'] = '312884046591b80b66f89a6_77997604';
                         <div class="col-md-12">
                             <div class="box box-primary">
                                 <div class="box-header">
-                                    <div class="col-md-6 text-left"><h3 class="box-title">Lista de Contatos</h3></div>
-                                    <div class="col-md-6 text-right">
-                                        <a class="btn btn-flat btn-primary" href="/newsletter/main/index.php?c=contato&m=novo">Novo</a>
-                                        <a class="btn btn-flat btn-primary" href="/newsletter/main/index.php?c=contato&m=importar">Importar</a>
-                                    </div>
+                                    <div class="col-md-6 text-left"><h3 class="box-title">Lista de E-mails Enviados</h3></div>
                                 </div>
                                 <div class="box-body">
                                     <table class="table table-striped tabela-acoes table-bordered dt-responsive nowrap" cellspacing="0" width="100%" id="tabela">
                                         <thead>
                                             <tr>
                                                 <th style="width: 15%;">Código</th>
-                                                <th>E-mail</th>
-                                                <th>Ações</th>
+                                                <th>Campanha</th>
+                                                <th>Contato</th>
+                                                <th>Situação</th>
+                                                <th style="width: 20%;">Data/Hora de Envio</th>
                                             </tr>
                                         </thead>
                                     </table>
@@ -105,7 +103,10 @@ $_smarty_tpl->properties['nocache_hash'] = '312884046591b80b66f89a6_77997604';
  type="text/javascript" src="plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" ><?php echo '</script'; ?>
 >
         <?php echo '<script'; ?>
- type="text/javascript" src="resource/contato.js?1"><?php echo '</script'; ?>
+ type="text/javascript" src="plugins/dateformat.js" ><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ type="text/javascript" src="resource/historico.js" ><?php echo '</script'; ?>
 >
     </body>
 </html>

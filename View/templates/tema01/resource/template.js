@@ -15,7 +15,7 @@ $('#tabela').DataTable({
         {"data": "titulo"},
         {"data": "id",
             "mRender": function (data) {
-                return '<i class="fa fa-edit" style="cursor: pointer;" onclick="window.location.href=\'/newsletter/main/index.php?c=template&m=novo/' + data + '\';" ></i>\n\
+                return '<i class="fa fa-edit" style="cursor: pointer;" onclick="window.location.href=\'/newsletter/main/index.php?c=template&m=novo&id=' + data + '\';" ></i>\n\
                         &nbsp;<i class="fa fa-trash" style="cursor: pointer;" onclick="remover(\'template_id\', ' + data + ', \'tabela\');"></i>';
             },
             "bSortable": false,

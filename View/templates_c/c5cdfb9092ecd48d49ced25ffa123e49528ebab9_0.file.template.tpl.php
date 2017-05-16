@@ -1,19 +1,19 @@
-<?php /* Smarty version 3.1.27, created on 2017-05-16 19:44:06
-         compiled from "/var/www/newsletter/main/View/templates/tema01/contato.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2017-05-16 19:50:01
+         compiled from "/var/www/newsletter/main/View/templates/tema01/template.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:312884046591b80b66f89a6_77997604%%*/
+/*%%SmartyHeaderCode:1595431507591b8219d64a51_76421769%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '80fb9fe4a2cd145e34e446011b2ab53357eb1c8d' => 
+    'c5cdfb9092ecd48d49ced25ffa123e49528ebab9' => 
     array (
-      0 => '/var/www/newsletter/main/View/templates/tema01/contato.tpl',
-      1 => 1494974313,
+      0 => '/var/www/newsletter/main/View/templates/tema01/template.tpl',
+      1 => 1494974112,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '312884046591b80b66f89a6_77997604',
+  'nocache_hash' => '1595431507591b8219d64a51_76421769',
   'variables' => 
   array (
     'titulo' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_591b80b671b943_01189657',
+  'unifunc' => 'content_591b8219d8cb85_84857919',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_591b80b671b943_01189657')) {
-function content_591b80b671b943_01189657 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_591b8219d8cb85_84857919')) {
+function content_591b8219d8cb85_84857919 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '312884046591b80b66f89a6_77997604';
+$_smarty_tpl->properties['nocache_hash'] = '1595431507591b8219d64a51_76421769';
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,20 +56,18 @@ $_smarty_tpl->properties['nocache_hash'] = '312884046591b80b66f89a6_77997604';
                     </h1>
                     <ol class="breadcrumb">
                         <li class="active">
-                            Contato
+                            Template
                         </li>
                     </ol>
                 </section>
                 <section class="content">
-
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-primary">
                                 <div class="box-header">
-                                    <div class="col-md-6 text-left"><h3 class="box-title">Lista de Contatos</h3></div>
+                                    <div class="col-md-6 text-left"><h3 class="box-title">Lista de Templates</h3></div>
                                     <div class="col-md-6 text-right">
-                                        <a class="btn btn-flat btn-primary" href="/newsletter/main/index.php?c=contato&m=novo">Novo</a>
-                                        <a class="btn btn-flat btn-primary" href="/newsletter/main/index.php?c=contato&m=importar">Importar</a>
+                                        <a class="btn btn-flat btn-primary" href="/newsletter/main/index.php?c=template&m=novo">Novo</a>
                                     </div>
                                 </div>
                                 <div class="box-body">
@@ -77,7 +75,7 @@ $_smarty_tpl->properties['nocache_hash'] = '312884046591b80b66f89a6_77997604';
                                         <thead>
                                             <tr>
                                                 <th style="width: 15%;">Código</th>
-                                                <th>E-mail</th>
+                                                <th>Título</th>
                                                 <th>Ações</th>
                                             </tr>
                                         </thead>
@@ -105,7 +103,7 @@ $_smarty_tpl->properties['nocache_hash'] = '312884046591b80b66f89a6_77997604';
  type="text/javascript" src="plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" ><?php echo '</script'; ?>
 >
         <?php echo '<script'; ?>
- type="text/javascript" src="resource/contato.js?1"><?php echo '</script'; ?>
+ type="text/javascript" src="resource/template.js" ><?php echo '</script'; ?>
 >
     </body>
 </html>
