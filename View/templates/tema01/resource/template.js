@@ -9,7 +9,7 @@ $('#tabela').DataTable({
         "url": "/newsletter/main/index.php?c=template&m=carregarTabelaPrincipal",
         "dataSrc": "listaPrincipal"
     },
-    "order": [1, "asc"],
+    "ordering": false,
     "columns": [
         {"data": "id"},
         {"data": "titulo"},

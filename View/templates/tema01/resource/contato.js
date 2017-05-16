@@ -9,13 +9,13 @@ $('#tabela').DataTable({
         "url": "/newsletter/main/index.php?c=contato&m=carregarTabelaPrincipal",
         "dataSrc": "listaPrincipal"
     },
-    "order": [1, "asc"],
+    "ordering": false,
     "columns": [
         {"data": "id"},
         {"data": "email"},
         {"data": "id",
             "mRender": function (data) {
-                return '<i class="fa fa-edit" style="cursor: pointer;" onclick="window.location.href=\'/newsletter/main/index.php?c=contato&m=novo/' + data + '\';" ></i>\n\
+                return '<i class="fa fa-edit" style="cursor: pointer;" onclick="window.location.href=\'/newsletter/main/index.php?c=contato&m=novo&id=' + data + '\';" ></i>\n\
                         &nbsp;<i class="fa fa-trash" style="cursor: pointer;" onclick="remover(\'contato_id\', ' + data + ', \'tabela\');"></i>';
             },
             "bSortable": false,
@@ -27,6 +27,8 @@ $('#tabela').DataTable({
 });
 
 function remover(obj, id, tabela, td) {
+
+    console.log(obj, id, tabela, td);
 
     $.confirm({
         text: "Você tem certeza que deseja remover o registro?",
