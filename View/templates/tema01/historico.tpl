@@ -54,6 +54,6 @@
         <script type="text/javascript" src="plugins/datatables/dataTables.bootstrap.min.js" ></script>
         <script type="text/javascript" src="plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" ></script>
         <script type="text/javascript" src="plugins/dateformat.js" ></script>
-        <script type="text/javascript" src="resource/historico.js" ></script>
+        <script type="text/javascript" src="resource/historico.js?2" ></script>
     </body>
 </html>
