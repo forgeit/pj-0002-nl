@@ -1,2 +1,1 @@
 --- criar rotina para remover da lista.
---- rotina para importar contatos do lisaruth.

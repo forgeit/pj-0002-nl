@@ -170,7 +170,7 @@ class EnvioController extends Controller {
         $mail->XMailer = ' ';
         $mail->Host = $cliente->getHostSmtp(); // It's okay
         $mail->Username = $cliente->getUserNameSmtp(); // It's okay
-        $mail->Password = base64_decode($cliente->getPassword());
+        $mail->Password = base64_decode($cliente->getPasswordSmtp());
         $mail->From = $cliente->getFromSmtp();
         $mail->FromName = $cliente->getFromNameSmtp();
 
