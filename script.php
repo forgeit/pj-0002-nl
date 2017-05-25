@@ -22,8 +22,12 @@ require_once __DIR__ . Config::PATH_CONTROLLER . 'EnvioController.php';
 
 Session::init();
 
+print_r("Iniciou\n");
+
 $envioController = new EnvioController(null);
 $envioController->processoDeEnvio();
+
+print_r("Fim\n");
 
 if ($envioController->aindaTemEmailParaEnviar()) {
 	$ch = curl_init();
