@@ -34,8 +34,8 @@ class EnvioController extends Controller {
         require_once './Model/Cliente.php';
         $filaEnvioService = new FilaEnvioService();
         $filaEnvioList = $filaEnvioService->buscarTodosAguardando();
-        print 'teste';
-        print_r($filaEnvioList);
+        // print 'teste';
+        // print_r($filaEnvioList);
         print count($filaEnvioList) > 0;
     }
 
