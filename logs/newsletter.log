@@ -1928,3 +1928,37 @@ Stack trace:
 2017-05-16T20:28:19-03:00 [Routes][INFO ] - ./Controller/RelatorioController.php
 2017-05-16T20:28:21-03:00 [Routes][INFO ] - ./Controller/R001Controller.php
 2017-05-16T20:28:22-03:00 [Routes][INFO ] - ./Controller/R001Controller.php
+2017-05-25T14:08:02-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-25T14:08:02-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-25T14:08:12-03:00 [Routes][INFO ] - ./Controller/LoginController.php
+2017-05-25T14:08:45-03:00 [Service][ERROR] - exception 'PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
+
+Next exception 'Doctrine\DBAL\Driver\PDOException' with message 'SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:47
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(45): Doctrine\DBAL\Driver\PDOConnection::__construct('mysql:host=mysq...', 'lisaruth1', '7898187730123', Array)
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#3 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#4 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#5 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#6 {main}
+
+Next exception 'Doctrine\DBAL\Exception\DriverException' with message 'An exception occured in driver: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql1.lisaruth.com.br' (101)' in /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php:115
+Stack trace:
+#0 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/DBALException.php(133): Doctrine\DBAL\Driver\AbstractMySQLDriver->convertException('An exception oc...', Object(Doctrine\DBAL\Driver\PDOException))
+#1 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(47): Doctrine\DBAL\DBALException::driverException(Object(Doctrine\DBAL\Driver\PDOMySql\Driver), Object(Doctrine\DBAL\Driver\PDOException))
+#2 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'lisaruth1', '7898187730123', Array)
+#3 /var/www/newsletter/main/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(780): Doctrine\DBAL\Connection->connect()
+#4 /var/www/newsletter/main/Service/ClienteService.php(18): Doctrine\DBAL\Connection->prepare('select * from c...')
+#5 /var/www/newsletter/main/Controller/LoginController.php(45): ClienteService->login(Object(Cliente))
+#6 /var/www/newsletter/main/index.php(71): LoginController->in(NULL)
+#7 {main}
