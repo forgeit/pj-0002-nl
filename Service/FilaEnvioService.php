@@ -34,6 +34,17 @@ class FilaEnvioService extends Service {
         }
     }
     
+    public function buscarAlgunsAguardando() {
+        try{
+            $query = Connect::getEm()->getConnection()->prepare('select * from fila_envio where id_situacao = 1 LIMIT 10');
+            $query->execute();
+            return $query->fetchAll();
+        } catch (Exception $ex) {
+            $this->log->error($ex);
+            return null;
+        }
+    }
+
     public function buscarTodosAguardando() {
         try{
             $query = Connect::getEm()->getConnection()->prepare('select * from fila_envio where id_situacao = 1');
