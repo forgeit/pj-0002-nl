@@ -136,7 +136,7 @@ class EnvioController extends Controller {
         foreach ($filaEnvioList as $value) {
             $this->log->info($value);
             $this->email($value, $template, $assinatura, $cliente);
-            sleep(60);
+            sleep(15);
         }
 
         unlink("./logs/execucao.tmp");
