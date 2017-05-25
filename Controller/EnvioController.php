@@ -24,6 +24,19 @@ class EnvioController extends Controller {
         $this->log = Log::getLog(__CLASS__);
     }
 
+    public function aindaTemEmailParaEnviar() {
+        require_once './Model/Situacao.php';
+        require_once './Model/Assinatura.php';
+        require_once './Model/FilaEnvio.php';
+        require_once './Service/Service.php';
+        require_once './Service/FilaEnvioService.php';
+        require_once './Model/Template.php';
+        require_once './Model/Cliente.php';
+        $filaEnvioService = new FilaEnvioService();
+        $filaEnvioList = $filaEnvioService->buscarTodosAguardando();
+        return count($filaEnvioList) > 0;
+    }
+
     public function enviar() {
         require_once './Model/FilaEnvio.php';
         require_once './Model/Situacao.php';
@@ -119,7 +132,8 @@ class EnvioController extends Controller {
         require_once './Model/Cliente.php';
 
         $filaEnvioService = new FilaEnvioService();
-        $filaEnvioList = $filaEnvioService->buscarTodosAguardando();
+        // $filaEnvioList = $filaEnvioService->buscarTodosAguardando();
+        $filaEnvioList = $filaEnvioService->buscarAlgunsAguardando();
 
         file_put_contents("./logs/execucao.tmp", "Executando\n");
 
