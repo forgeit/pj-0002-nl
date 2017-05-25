@@ -151,7 +151,14 @@ class EnvioController extends Controller {
         require_once './Model/Template.php';
         require_once './Model/Cliente.php';
 
+        $this->log->info('Vou enviar o email = array =  ' . $array);
+        $this->log->info('Vou enviar o email = template =  ' . $array);
+        $this->log->info('Vou enviar o email = assinatura ' . $array);
+        $this->log->info('Vou enviar o email = cliente = ' . $array);
+
         $mail = new PHPMailer();
+
+        $this->log->info('Nova instancia criada.');
 
         $mail->IsSMTP();
 
@@ -174,8 +181,8 @@ class EnvioController extends Controller {
         $mail->From = $cliente->getFromSmtp();
         $mail->FromName = $cliente->getFromNameSmtp();
 
-        $this->log->info($cliente);
-        $this->log->info($mail);
+        $this->log->info('Opções informadas.');
+        // $this->log->info($mail);
 
         
         $mail->AddAddress($array['email']);
@@ -212,13 +219,14 @@ class EnvioController extends Controller {
         $fila = $service->findById('FilaEnvio', $array['id']);
 
         if (!$mail->send()) {
-            $this->log->error($mail->ErrorInfo);
             $situacao = $service->findById('Situacao', 3);
+            $this->log->info('Erro ao enviar');
         } else {
             $situacao = $service->findById('Situacao', 2);
+            $this->log->info('Sucesso ao enviar');
         }
 
-        $this->log->info("Teste testezito no mas.");
+        $this->log->info('Final do envio');
 
         $fila->setSituacao($situacao);
         $fila->setTsEnvio(new \DateTime(date('Y-m-d H:i:s')));
